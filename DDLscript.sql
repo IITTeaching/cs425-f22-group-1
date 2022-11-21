@@ -1,0 +1,5 @@
+CREATE TABLE Branch();
+CREATE TABLE Employee();
+CREATE TABLE Customer();
+CREATE TABLE Account();
+CREATE TABLE Loan();
