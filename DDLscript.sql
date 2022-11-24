@@ -20,7 +20,9 @@ CREATE TABLE employee(
   zip NUMERIC(5)
   employee_type VARCHAR(20),
   salary NUMERIC(8,2),
+  branch_ID NUMERIC(9),
   PRIMARY KEY (SSN),
+  FOREIGN KEY branch_ID references branch(branch_ID),
   CHECK (employee_type = 'teller' OR occupation = 'loan specialist' OR occupation = 'manager')
 );
 
@@ -34,9 +36,9 @@ CREATE TABLE customer(
   city VARCHAR(20),
   state CHAR(2),
   zip NUMERIC(5),
-  branch VARCHAR(20),
+  branch_ID NUMERIC(9),
   PRIMARY KEY (SSN),
-  FOREIGN KEY branch references branch
+  FOREIGN KEY branch_ID references branch(branch_ID),
 );
 
 CREATE TABLE account(
