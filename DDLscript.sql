@@ -55,6 +55,7 @@ CREATE TABLE loan(
 );
 
 CREATE TABLE transaction(
+  transaction_ID NUMERIC(9),
   transaction_type CHAR(10),
   transaction_amount NUMERIC(30,2),
   description VARCHAR(256),
