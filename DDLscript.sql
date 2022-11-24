@@ -1,6 +1,5 @@
 CREATE TABLE branch(
   branch_ID NUMERIC(9),
-  address VARCHAR(20),
   street_number INTEGER NOT NULL,
   street_name VARCHAR(20),
   city VARCHAR(20),
